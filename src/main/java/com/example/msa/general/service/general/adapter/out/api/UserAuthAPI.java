@@ -1,6 +1,7 @@
 package com.example.msa.general.service.general.adapter.out.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.net.URI;
@@ -11,6 +12,7 @@ import java.net.http.HttpResponse;
 /**
  * <b> 회원관리 API 요청 </b>
  */
+@Component
 public class UserAuthAPI {
 
     /**
