@@ -1,7 +1,7 @@
 package com.example.msa.general.service.general.application.service;
 
 import com.example.msa.general.service.general.adapter.out.api.UserAuthAPI;
-import com.example.msa.general.service.general.adapter.out.db.PersistenceAdapter;
+import com.example.msa.general.service.general.adapter.out.hashmap.ordinary.HashMapPersistenceAdapter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +19,7 @@ public class GeneralService {
     private static final Logger logger = Logger.getLogger(GeneralService.class.getName());
 
     private final UserAuthAPI userAuthAPI;
-    private final PersistenceAdapter persistenceAdapter;
+    private final HashMapPersistenceAdapter persistenceAdapter;
 
     /**
      * <b> 일반 유저 회원가입 로직 수행 </b>

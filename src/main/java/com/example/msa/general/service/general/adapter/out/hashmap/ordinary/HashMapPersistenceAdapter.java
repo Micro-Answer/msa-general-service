@@ -1,12 +1,23 @@
-package com.example.msa.general.service.general.adapter.out.array.sync;
+package com.example.msa.general.service.general.adapter.out.hashmap.ordinary;
 
+import com.example.msa.general.service.general.adapter.out.hashmap.GeneralUserEntity;
 import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * <b> 일반 유저 영속성 어댑터 </b>
+ *
+ * - 데이터베이스 대신 해시맵을 활용한 어댑터
  */
 @Component
-public class PersistenceAdapter {
+public class HashMapPersistenceAdapter {
+    private final Map<String, GeneralUserEntity> users;
+
+    HashMapPersistenceAdapter() {
+        users = new HashMap<>();
+    }
 
     /**
      * <b> 일반 유저의 추가 정보 저장 </b>
@@ -20,7 +31,7 @@ public class PersistenceAdapter {
      * @param age 예시 데이터
      */
     public void saveGeneralUser(String id, String email, int age) {
-        // 데이터베이스 저장 예시
+        users.put(id, new GeneralUserEntity(email, age));
         System.out.printf("저장된 데이터: 아이디 = %s, 이메일 = %s, 나이 = %d \n", id, email, age);
     }
 }
