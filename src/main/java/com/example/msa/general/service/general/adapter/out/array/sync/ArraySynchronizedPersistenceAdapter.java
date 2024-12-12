@@ -1,4 +1,4 @@
-package com.example.msa.general.service.general.adapter.out.db;
+package com.example.msa.general.service.general.adapter.out.array.sync;
 
 import org.springframework.stereotype.Component;
 

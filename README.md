@@ -19,7 +19,8 @@
 - [ ] 출력 어댑터 단위 테스트 작성 (Issue #15)
 
 ### 동시성 
-- [ ] 배열 출력 어댑터에 대한 동기화 (Issue #16)
+- [ ] HashMap 출력 어댑터에 대한 동기화 (Issue #16)
+  - ConcurrentHashMap
   - synchronized
   - ReentrantLock
   - ReadWriteLock
