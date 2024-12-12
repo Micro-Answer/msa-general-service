@@ -20,3 +20,8 @@
 
 ### 동시성 
 - [ ] 배열 출력 어댑터에 대한 동기화 (Issue #16)
+  - synchronized
+  - ReentrantLock
+  - ReadWriteLock
+  - StampedLock
+  - Semaphore
