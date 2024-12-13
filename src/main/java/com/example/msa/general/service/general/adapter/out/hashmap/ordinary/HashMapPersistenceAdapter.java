@@ -1,6 +1,5 @@
 package com.example.msa.general.service.general.adapter.out.hashmap.ordinary;
 
-import com.example.msa.general.service.general.adapter.out.hashmap.GeneralUserEntity;
 import com.example.msa.general.service.general.application.service.port.out.GeneralUserDataOutputPort;
 import org.springframework.stereotype.Component;
 
