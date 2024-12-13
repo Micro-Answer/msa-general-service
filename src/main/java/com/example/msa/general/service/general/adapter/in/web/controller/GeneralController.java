@@ -2,7 +2,7 @@ package com.example.msa.general.service.general.adapter.in.web.controller;
 
 import com.example.msa.general.service.general.adapter.in.web.dto.request.GeneralSignUpRequest;
 import com.example.msa.general.service.general.adapter.in.web.dto.response.GeneralSignUpResponse;
-import com.example.msa.general.service.general.application.service.GeneralService;
+import com.example.msa.general.service.general.application.port.in.GeneralUserDataInputPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class GeneralController {
-    private final GeneralService generalService;
+    private final GeneralUserDataInputPort generalService;
 
     @PostMapping("/v1/general/sign-up")
     public ResponseEntity<GeneralSignUpResponse> signUp(@RequestBody GeneralSignUpRequest body) {
