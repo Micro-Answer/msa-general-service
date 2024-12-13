@@ -2,7 +2,7 @@ package com.example.msa.general.service.general.application.service;
 
 import com.example.msa.general.service.general.adapter.out.api.UserAuthAPI;
 import com.example.msa.general.service.general.adapter.out.hashmap.ordinary.HashMapPersistenceAdapter;
-import com.example.msa.general.service.general.application.service.port.in.GeneralUserDataInputPort;
+import com.example.msa.general.service.general.application.port.in.GeneralUserDataInputPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
