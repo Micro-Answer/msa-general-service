@@ -25,7 +25,7 @@ public class GeneralController {
 
     @PostMapping("/v1/general/sign-up")
     public ResponseEntity<GeneralSignUpResponse> signUp(@RequestBody GeneralSignUpRequest body) {
-        boolean signUpSuccess = generalService.signUp(body.getId(), body.getPw(), body.getRole());
+        boolean signUpSuccess = generalService.signUp(body.getUserId(), body.getPw(), body.getRole());
 
         if (signUpSuccess) {
             return ResponseEntity.ok(new GeneralSignUpResponse("회원가입 성공"));
