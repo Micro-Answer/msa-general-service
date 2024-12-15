@@ -12,7 +12,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class GeneralSignUpRequest {
-    String id;
+    String userId;
     String pw;
     String role;
 }
