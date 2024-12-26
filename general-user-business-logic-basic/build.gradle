@@ -12,6 +12,9 @@ repositories {
 }
 
 dependencies {
+    // 하위 모듈 의존성
+    implementation project(':general-user-business-logic-api')
+
     // 스프링 web starter 의존성
     implementation 'org.springframework.boot:spring-boot-starter-web'
 
