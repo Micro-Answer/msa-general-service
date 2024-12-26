@@ -1,4 +1,4 @@
-package com.example.msa.general.service.general.adapter.out.api;
+package com.example.msa.general.service.adapter.out.api;
 
 /**
  * <b> 회원가입 DTO </b>
