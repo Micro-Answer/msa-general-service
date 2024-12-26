@@ -1,2 +1,4 @@
 rootProject.name = 'msa-general-service'
 include 'general-user-business-logic-basic'
+include 'general-user-business-logic-api'
+
