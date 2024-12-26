@@ -24,12 +24,22 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// 하위 모듈 의존성
+	implementation project(':general-user-business-logic-basic')
+
+	// 스프링 web starter 의존성
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// lombok 의존성
 	compileOnly 'org.projectlombok:lombok'
-	runtimeOnly 'com.h2database:h2'
-	runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
+
+	// 데이터베이스 의존성
+	// implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// runtimeOnly 'com.h2database:h2'
+	// runtimeOnly 'com.mysql:mysql-connector-j'
+
+	// 테스트 의존성
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
