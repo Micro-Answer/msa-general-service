@@ -1,8 +1,8 @@
-package com.example.msa.general.service.general.application.service;
+package com.example.msa.general.service.application.service;
 
-import com.example.msa.general.service.general.adapter.out.api.UserAuthAPI;
-import com.example.msa.general.service.general.application.port.in.GeneralUserDataInputPort;
-import com.example.msa.general.service.general.application.port.out.GeneralUserDataOutputPort;
+import com.example.msa.general.service.adapter.out.api.UserAuthAPI;
+import com.example.msa.general.service.application.port.in.GeneralUserDataInputPort;
+import com.example.msa.general.service.application.port.out.GeneralUserDataOutputPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

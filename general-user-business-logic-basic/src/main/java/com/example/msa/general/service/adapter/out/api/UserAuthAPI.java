@@ -1,4 +1,4 @@
-package com.example.msa.general.service.general.adapter.out.api;
+package com.example.msa.general.service.adapter.out.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;

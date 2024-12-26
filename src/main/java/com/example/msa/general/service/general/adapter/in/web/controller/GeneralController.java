@@ -2,7 +2,7 @@ package com.example.msa.general.service.general.adapter.in.web.controller;
 
 import com.example.msa.general.service.general.adapter.in.web.dto.request.GeneralSignUpRequest;
 import com.example.msa.general.service.general.adapter.in.web.dto.response.GeneralSignUpResponse;
-import com.example.msa.general.service.general.application.port.in.GeneralUserDataInputPort;
+import com.example.msa.general.service.application.port.in.GeneralUserDataInputPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
