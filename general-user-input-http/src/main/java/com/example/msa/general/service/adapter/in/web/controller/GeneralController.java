@@ -20,10 +20,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api")
-public class GeneralController {
+public class GeneralController implements GeneralUserInputAdapter {
     private final GeneralUserDataInputPort generalService;
 
     @PostMapping("/v1/general/sign-up")
+    @Override
     public ResponseEntity<GeneralSignUpResponse> signUp(@RequestBody GeneralSignUpRequest body) {
         boolean signUpSuccess = generalService.signUp(body.getUserId(), body.getPw(), body.getRole());
 

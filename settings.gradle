@@ -6,4 +6,5 @@ include 'general-user-output-auth-domain-http'
 include 'general-user-output-auth-domain-api'
 include 'general-user-output-persistence-api'
 include 'general-user-input-http'
+include 'general-user-input-api'
 
