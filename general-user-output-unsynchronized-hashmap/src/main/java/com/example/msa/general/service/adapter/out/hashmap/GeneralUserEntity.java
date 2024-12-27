@@ -1,4 +1,4 @@
-package com.example.msa.general.service.adapter.out.hashmap.ordinary;
+package com.example.msa.general.service.adapter.out.hashmap;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
