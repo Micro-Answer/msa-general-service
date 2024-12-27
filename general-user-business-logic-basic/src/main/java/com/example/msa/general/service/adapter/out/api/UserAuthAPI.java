@@ -1,5 +1,6 @@
 package com.example.msa.general.service.adapter.out.api;
 
+import com.example.msa.general.service.application.port.out.UserAuthApiOutputPort;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +14,7 @@ import java.net.http.HttpResponse;
  * <b> 회원관리 API 요청 </b>
  */
 @Component
-public class UserAuthAPI {
+public class UserAuthAPI implements UserAuthApiOutputPort {
 
     /**
      * <b> 회원가입을 외부 서비스에 요청 </b>
