@@ -1,4 +1,4 @@
-package com.example.msa.general.service.general.adapter.in.web.dto.request;
+package com.example.msa.general.service.adapter.in.web.dto.request;
 
 import lombok.Getter;
 import lombok.Setter;
