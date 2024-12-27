@@ -1,8 +1,8 @@
 package com.example.msa.general.service.application.service;
 
-import com.example.msa.general.service.adapter.out.api.UserAuthAPI;
 import com.example.msa.general.service.application.port.in.GeneralUserDataInputPort;
 import com.example.msa.general.service.application.port.out.GeneralUserDataOutputPort;
+import com.example.msa.general.service.application.port.out.UserAuthApiOutputPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 public class GeneralService implements GeneralUserDataInputPort {
     private static final Logger logger = Logger.getLogger(GeneralService.class.getName());
 
-    private final UserAuthAPI userAuthAPI;
+    private final UserAuthApiOutputPort userAuthAPI;
     private final GeneralUserDataOutputPort persistenceAdapter;
 
     /**
