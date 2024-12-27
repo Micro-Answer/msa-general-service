@@ -25,6 +25,9 @@ repositories {
 
 dependencies {
 	// 하위 모듈 의존성
+	implementation project(':general-user-input-api')
+	implementation project(':general-user-input-http')
+
 	implementation project(':general-user-business-logic-api')
 	implementation project(':general-user-business-logic-basic')
 
