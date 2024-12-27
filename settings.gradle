@@ -2,4 +2,5 @@ rootProject.name = 'msa-general-service'
 include 'general-user-business-logic-basic'
 include 'general-user-business-logic-api'
 include 'general-user-output-unsynchronized-hashmap'
+include 'general-user-output-auth-domain-http'
 
